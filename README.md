@@ -82,6 +82,7 @@ Cria uma nova playlist.
 
 Exemplo de body:
 
+```json
 {
   "name": "Rock",
   "tags": ["Heavy Metal"],
@@ -94,7 +95,7 @@ Exemplo de body:
     }
   ]
 }
-
+```
 ---
 
 ### PUT /playlist/:id/name
@@ -123,13 +124,14 @@ Remove uma playlist pelo ID.
 ### POST /playlist/:id/music
 Adiciona uma música em uma playlist.
 
+```json
 {
   "album": "Album Name",
   "title": "Music Title",
   "year": 2000,
   "member": ["Artista 1", "Artista 2"]
 }
-
+```
 ---
 
 ### DELETE /playlist/:id/music/:idMusic
@@ -168,9 +170,4 @@ http://localhost:3000
 ---
 
 ## 🚀 Possíveis melhorias futuras
-
-- Banco de dados (MongoDB / PostgreSQL)
-- Validação com Zod ou Joi
-- Service layer (arquitetura mais limpa)
 - Autenticação JWT
-- Deploy em produção
