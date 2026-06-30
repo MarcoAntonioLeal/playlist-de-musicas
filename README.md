@@ -139,17 +139,6 @@ Remove uma música específica da playlist.
 
 ---
 
-## ⚙️ Como executar o projeto
-
-npm install
-node server.js
-
-Servidor rodando em:
-
-http://localhost:3000
-
----
-
 ## 🧠 Observações importantes
 
 - Dados armazenados em memória (array)
